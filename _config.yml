@@ -1,0 +1,6 @@
+highlighter: pygments
+markdown: kramdown
+permalink: pretty
+exclude:
+  - Gemfile
+  - params.json
