@@ -1,6 +1,8 @@
+baseurl: /test.ghp.lib
 highlighter: pygments
 markdown: kramdown
 permalink: pretty
 exclude:
   - Gemfile
   - params.json
+  - server.sh
