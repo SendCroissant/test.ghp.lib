@@ -301,18 +301,53 @@ Full-Width Styles
 
 #project_title {
   margin: 0;
-  color: #fff;
   font-size: 42px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
 }
 
 #project_tagline {
-  color: #fff;
   font-size: 24px;
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
+}
+
+#project_title a,
+#project_tagline a {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: #111 0px 0px 10px;
+}
+
+#nav {
+  position: absolute;
+  z-index: 20;
+  bottom: -22px;
+  margin: 0;
+  
+  width: 400px;
+  padding: 0;
+}
+
+#nav li {
+  list-style: none;
+  float: left;
+}
+
+#nav li a {
+  background: #595959;
+  line-height: 1.2;
+  font-size: 24px;
+  padding: 10px;
+  margin-right: 20px;
+  color: white;
+  text-shadow: #111 0px 0px 3px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+    background: rgb(0, 144, 255);
 }
 
 #downloads {
