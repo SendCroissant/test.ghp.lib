@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Test.ghp.lib : Testing GitHub Pages...">
 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/stylesheets/stylesheet.css">
 
     <title>{% unless page.is_home %}{{ page.title }} &middot; {% endunless %}Test.ghp.lib</title>
+    {% for item in page.scripts %}
+      <script type="text/javascript" src="{{ item }}"></script>
+    {% endfor %}
   </head>
 
   <body>
@@ -24,6 +28,7 @@
           <ul id="nav">
             <li class="nav-home"><a href="{{ site.baseurl }}/">Home</a></li>
             <li class="nav-examples"><a href="{{ site.baseurl }}/examples">Examples</a></li>
+            <li class="nav-guide"><a href="{{ site.baseurl }}/guide">Guide</a></li>
           </ul>
 
           {% if page.is_home %}
@@ -49,8 +54,5 @@
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
-
   </body>
 </html>
