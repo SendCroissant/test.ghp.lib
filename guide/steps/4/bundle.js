@@ -47,7 +47,7 @@ var Form = React.createClass({displayName: "Form",
 
     return (
       React.createElement("div", {className: "panel panel-primary"}, 
-        React.createElement("div", {className: "panel-heading"}, "Login Form"), 
+        React.createElement("div", {className: "panel-heading"}, "Login Form: full functionality"), 
         form, 
         React.createElement("div", {className: "panel-footer"}, 
           React.createElement("em", null, "Password must be equal to the reverted login and longer than 3 symbols")
@@ -72,7 +72,7 @@ var Form = React.createClass({displayName: "Form",
         ), 
         React.createElement("div", {className: "form-group"}, 
           React.createElement("div", {className: "col-sm-6 text-right"}, 
-            React.createElement("button", {type: "submit", className: "btn btn-info"}, "Sign in")
+            React.createElement("button", {type: "submit", className: "btn btn-info"}, "Log in")
           ), 
           React.createElement("div", {className: "col-sm-6"}, 
             React.createElement("div", {className: "checkbox"}, 
@@ -90,7 +90,7 @@ var Form = React.createClass({displayName: "Form",
         React.createElement("div", {className: "form-group"}, 
           React.createElement("label", {className: "col-sm-6 control-label"}, "Hello, ", user, "!"), 
           React.createElement("div", {className: "col-sm-6"}, 
-            React.createElement("button", {className: "btn btn-danger"}, "Sign out")
+            React.createElement("button", {className: "btn btn-danger"}, "Log out")
           )
         )
       )
@@ -108,7 +108,7 @@ var React = require('react');
 var model = require('./model');
 var Form = require('./form');
 
-React.render( React.createElement(Form, {model: model}), window.document.getElementById('demo-last') );
+React.render( React.createElement(Form, {model: model}), window.document.getElementById('demo-step-4') );
 
 },{"./form":1,"./model":3,"react":4}],3:[function(require,module,exports){
 'use strict';

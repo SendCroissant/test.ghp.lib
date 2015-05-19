@@ -4,4 +4,4 @@ var React = require('react');
 var model = require('./model');
 var Form = require('./form');
 
-React.render( <Form model={model} />, window.document.getElementById('demo-last') );
+React.render( <Form model={model} />, window.document.getElementById('demo-step-4') );

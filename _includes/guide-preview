@@ -1,2 +1,2 @@
-<div id="demo-{{ include.step }}"></div>
+<div id="demo-step-{{ include.step }}"></div>
 <script type="text/javascript" src="{{ site.baseurl }}/guide/steps/{{ include.step }}/bundle.js"></script>

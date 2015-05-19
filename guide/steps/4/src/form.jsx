@@ -46,7 +46,7 @@ var Form = React.createClass({
 
     return (
       <div className="panel panel-primary">
-        <div className="panel-heading">Login Form</div>
+        <div className="panel-heading">Login Form: full functionality</div>
         {form}
         <div className="panel-footer">
           <em>Password must be equal to the reverted login and longer than 3 symbols</em>
@@ -71,7 +71,7 @@ var Form = React.createClass({
         </div>
         <div className="form-group">
           <div className="col-sm-6 text-right">
-            <button type="submit" className="btn btn-info">Sign in</button>
+            <button type="submit" className="btn btn-info">Log in</button>
           </div>
           <div className="col-sm-6">
             <div className="checkbox">
@@ -89,7 +89,7 @@ var Form = React.createClass({
         <div className="form-group">
           <label className="col-sm-6 control-label">Hello, {user}!</label>
           <div className="col-sm-6">
-            <button className="btn btn-danger">Sign out</button>
+            <button className="btn btn-danger">Log out</button>
           </div>
         </div>
       </form>
