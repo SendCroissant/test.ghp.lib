@@ -1,21 +1,27 @@
-Шаг 4: добавим возможность запоминать пользователя.
+---
+title: 'React Guide: Step 4'
+layout: default
+scripts: ['//fb.me/react-0.13.3.min.js']
+---
+
+# Шаг 4: Возможность запоминать пользователя
 
 Для этого добавим флаг "Remember me" в форму:
 
 {% highlight html %}
-{% include_relative steps/4/snippets/form.jsx %}
+{% include_relative snippets/form.jsx %}
 {% endhighlight %}
 
 А также добавим поддержку работы с `localStorage`, если оно доступно:
 
 {% highlight javascript %}
-{% include_relative steps/4/snippets/model_storage.js %}
+{% include_relative snippets/model_storage.js %}
 {% endhighlight %}
 
 И расширим модель работой с хранилищем:
 
 {% highlight javascript %}
-{% include_relative steps/4/snippets/model_methods.js %}
+{% include_relative snippets/model_methods.js %}
 {% endhighlight %}
 
 Вот, что у нас получилось в итоге:

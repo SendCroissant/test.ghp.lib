@@ -108,7 +108,7 @@ var React = require('react');
 var model = require('./model');
 var Form = require('./form');
 
-React.render( React.createElement(Form, {model: model}), window.document.getElementById('demo-step-4') );
+React.render( React.createElement(Form, {model: model}), window.document.getElementById('example') );
 
 },{"./form":1,"./model":3,"react":4}],3:[function(require,module,exports){
 'use strict';
