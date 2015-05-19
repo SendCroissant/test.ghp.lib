@@ -32,7 +32,7 @@ var Form = React.createClass({displayName: "Form",
       login: this.refs.login.getDOMNode().value,
       password: this.refs.password.getDOMNode().value,
       remember: this.refs.remember.getDOMNode().checked
-    }
+    };
   },
 
   getInitialState: function() {
@@ -108,7 +108,7 @@ var React = require('react');
 var model = require('./model');
 var Form = require('./form');
 
-React.render( React.createElement(Form, {model: model}), document.getElementById('demo-last') );
+React.render( React.createElement(Form, {model: model}), window.document.getElementById('demo-last') );
 
 },{"./form":1,"./model":3,"react":4}],3:[function(require,module,exports){
 'use strict';

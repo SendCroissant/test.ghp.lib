@@ -31,7 +31,7 @@ var Form = React.createClass({
       login: this.refs.login.getDOMNode().value,
       password: this.refs.password.getDOMNode().value,
       remember: this.refs.remember.getDOMNode().checked
-    }
+    };
   },
 
   getInitialState: function() {
