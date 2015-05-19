@@ -266,7 +266,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 900px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -403,7 +403,9 @@ Full-Width Styles
   background: #212121;
 }
 
-
+.demo-container {
+  max-width: 600px;
+}
 
 /*******************************************************************************
 Small Device Styles
