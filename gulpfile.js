@@ -129,7 +129,7 @@ var serveTask = (function () {
 function watchTask () {
   gulp.watch([
     '**/*.md', '!_*/**/*.md',
-    'guide/**', '!guide/**/bundle*',
+    'guide/**/*.js*', '!guide/**/bundle*',
     '!node_modules/**'
   ], ['serve']).on('change', function (e) {
     console.warn('\n#', e.type + ':', e.path);
