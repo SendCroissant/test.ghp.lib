@@ -1,5 +1,7 @@
 'use strict';
 
+var React = require('react');
+
 var Form = React.createClass({
 
   _handleLogin: function (e) {
@@ -95,3 +97,5 @@ var Form = React.createClass({
   }
 
 });
+
+module.exports = Form;

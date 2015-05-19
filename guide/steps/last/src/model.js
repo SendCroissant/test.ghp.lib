@@ -1,21 +1,23 @@
 'use strict';
 
+var KEY = 'login-form-demo-last';
+
 var clear;
-var read;
-var write;
+var load;
+var save;
 
 if (window.localStorage) {
-  clear = function (key) {
-    window.localStorage.removeItem(key);
+  clear = function () {
+    window.localStorage.removeItem(KEY);
   };
-  read = function (key) {
-    return window.localStorage.getItem(key);
+  load = function () {
+    return window.localStorage.getItem(KEY);
   };
-  write = function (key, value) {
-    window.localStorage.setItem(key, value);
+  save = function (value) {
+    window.localStorage.setItem(KEY, value);
   };
 } else {
-  clear = read = write = function () {};
+  clear = load = save = function () {};
 }
 
 function revert (str) {
@@ -28,28 +30,25 @@ function revert (str) {
   return reverted;
 }
 
+var user = load();
 
-function Model (key) {
-  this._key = key;
-  this._user = read(key);
-}
+module.exports = {
+  login: function (data) {
+    if (data.login.length < 3 || revert(data.login) !== data.password) {
+      throw new Error('Invalid data');
+    }
 
-Model.prototype.login = function (data) {
-  if (data.login.length < 3 || revert(data.login) !== data.password) {
-    throw new Error('Invalid data');
+    if (data.remember) {
+      save(data.login);
+    }
+    user = data.login;
+  },
+  logout: function () {
+    clear();
+    user = null;
+  },
+  status: function () {
+    return user;
   }
-
-  if (data.remember) {
-    write(this._key, data.login);
-  }
-  this._user = data.login;
-};
-Model.prototype.logout = function () {
-
-  clear(this._key);
-  this._user = null;
-};
-Model.prototype.status = function () {
-  return this._user;
 };
 

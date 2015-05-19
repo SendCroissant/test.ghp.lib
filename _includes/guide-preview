@@ -1,4 +1,2 @@
 <div id="demo-{{ include.step }}"></div>
-<script type="text/jsx" src="{{ site.baseurl }}/guide/steps/{{ include.step }}/src/form.jsx"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/guide/steps/{{ include.step }}/src/model.js"></script>
-<script type="text/jsx" src="{{ site.baseurl }}/guide/steps/{{ include.step }}/src/index.jsx"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/guide/steps/{{ include.step }}/bundle.js"></script>

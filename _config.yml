@@ -5,4 +5,7 @@ permalink: pretty
 exclude:
   - Gemfile
   - params.json
-  - server.sh
+  - gulpfile.js
+  - npm-*
+  - package.json
+  - guide/**/src
