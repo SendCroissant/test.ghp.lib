@@ -19,9 +19,3 @@ if (window.localStorage) {
 } else {
   clear = load = save = function () {};
 }
-
-// ...
-
-module.exports = {
-  // ...
-};

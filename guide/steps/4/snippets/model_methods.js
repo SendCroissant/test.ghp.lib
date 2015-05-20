@@ -2,7 +2,7 @@
 
 var user = load();
 
-module.exports = {
+var model = {
   login: function (data) {
     // ...
     if (data.remember) {

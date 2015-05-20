@@ -12,7 +12,7 @@ scripts: ['//fb.me/react-0.13.3.min.js']
 {% include_relative snippets/form.jsx %}
 {% endhighlight %}
 
-А также добавим поддержку работы с `localStorage`, если оно доступно:
+А также добавим поддержку работы с `localStorage` (если оно доступно) в начале файла `model.js`:
 
 {% highlight javascript %}
 {% include_relative snippets/model_storage.js %}
