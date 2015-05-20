@@ -27,3 +27,5 @@ scripts: ['//fb.me/react-0.13.3.min.js']
 Вот, что у нас получилось в итоге:
 
 {% include guide-preview step=4 %}
+
+[← Previous Step]({{ site.baseurl }}/guide/steps/3)

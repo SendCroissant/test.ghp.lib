@@ -58,5 +58,5 @@ scripts: ['//fb.me/react-0.13.3.min.js']
 
 {% include guide-preview step=2 %}
 
-[← Previous Step]({{ site.baseurl }}/guide/steps/1)
+[← Previous Step]({{ site.baseurl }}/guide/steps/1) \| [Next Step →]({{ site.baseurl }}/guide/steps/3)
 
